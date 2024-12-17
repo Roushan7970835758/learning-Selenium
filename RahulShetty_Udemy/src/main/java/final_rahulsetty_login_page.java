@@ -3,6 +3,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -12,7 +13,7 @@ public class final_rahulsetty_login_page {
 		// TODO Auto-nerated method stub
 		WebDriverManager.chromedriver().setup();
 		
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new EdgeDriver();
 		
 		//implicit wait
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -55,11 +56,13 @@ public class final_rahulsetty_login_page {
 		
 		Thread.sleep(1000);
 		driver.findElement(By.cssSelector("button.signInBtn")).click();
-		System.out.print("sign in clicked succesfully");
+		System.out.println("sign in clicked succesfully");
 		
 		if(driver.findElement(By.xpath("//h1[contains(text(),\"Welcome to \")]")).isDisplayed()) {
+			System.out.println(driver.findElement(By.xpath("//h1[contains(text(),\"Welcome to \")]")).getText());
 			System.out.println("process completed !!!");
 		}
+		driver.findElement(By.xpath("//*[text()=\"Log Out\"]")).click();
 		
 		driver.close();
 		
