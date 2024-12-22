@@ -1,0 +1,23 @@
+package test1;
+
+import org.testng.annotations.Test;
+
+import com.beust.jcommander.Parameters;
+
+public class test3 {
+	@Parameters({"URL"})
+	@Test
+	public void webLoginCarLoan() {
+		System.out.println("webLoginCarLoan");
+	}
+	
+	@Test(groups={"smoke"})
+	public void mobileLoginCarLoan() {
+		System.out.println("mobileLoginCarLoan");
+	}
+	
+	@Test
+	public void loginAPICarLoan() {
+		System.out.println("loginAPICarLoan");
+	}
+}

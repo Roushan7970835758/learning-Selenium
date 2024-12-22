@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestNg Learning"  >
+  
+  <parameter name="URL" value="https://www.google.com"/>
+
+  <listeners>
+    <listener class-name="test1.Listeners"/>
+  </listeners>
+
+  <test name="Test">
+    <classes>
+      <class name="test1.test1">
+        <methods>
+          <include name="demo"/>
+        </methods>
+      </class>
+      <class name="test1.test1"/>
+      <class name="test1.test2"/>
+      <class name="test1.test3"/>
+    </classes>
+  </test>
+
+  <test name="loans">
+    <classes>
+      <class name="test1.test4">
+        <methods>
+          <exclude name="mobile.*"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+
+</suite>

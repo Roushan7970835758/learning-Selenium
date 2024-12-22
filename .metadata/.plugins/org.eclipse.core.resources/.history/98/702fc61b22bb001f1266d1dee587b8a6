@@ -1,0 +1,37 @@
+package javaStreams;
+
+import java.util.ArrayList;
+
+import org.testng.annotations.Test;
+
+public class test1 {
+	
+	//count the number of word starting with alphabet A in given list
+	
+	@Test
+	public static void regular() {
+		ArrayList<String> name = new ArrayList<>();
+		name.add("rousnan");
+		name.add("Aman");
+		name.add("shyam");
+		
+		name.add("mohan");
+		name.add("shivam");
+		
+		int count=0;
+		
+		for(int i=0;i<name.size();i++) {
+			String actualName = name.get(i);
+			
+			if(actualName.startsWith("A")) {
+				System.out.println(actualName);
+				count++;
+			}
+			
+			
+			
+		}
+		
+		
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;RahulShetty_Udemy/src/main/java/Dropdown_Practice&apos;&#x0D;&#x0A;- Original project: &apos;RahulShetty_Udemy&apos;&#x0D;&#x0A;- Destination element: &apos;RahulShetty_Udemy/src/main/java/Dropdown_Practice&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     LatestDropdown_LoopintUI.java&#x0D;&#x0A;     dropdow_checkboxPractice.java" description="Copy compilation units" destination="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;Dropdown_Practice" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;{LatestDropdown_LoopintUI.java" element2="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;{dropdow_checkboxPractice.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1733432550483" units="2" version="1.0"/>
+</session>

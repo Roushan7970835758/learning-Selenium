@@ -1,0 +1,86 @@
+package javaStreams;
+
+import java.util.ArrayList;
+import java.util.stream.Stream;
+
+import org.testng.annotations.Test;
+
+public class test1 {
+	
+	//count the number of word starting with alphabet A in given list
+	
+//	@Test
+	public  void regular() {
+		ArrayList<String> name = new ArrayList<>();
+		name.add("rousnan");
+		name.add("Aman");
+		name.add("shyam");
+		
+		name.add("mohan");
+		name.add("shivam");
+		
+		int count=0;
+		
+		for(int i=0;i<name.size();i++) {
+			String actualName = name.get(i);
+			
+			if(actualName.startsWith("A")) {
+				System.out.println(actualName);
+				count++;
+			}
+			
+			
+			
+		}
+		
+		
+	}
+//	@Test
+	public void streamFilter() {
+		ArrayList<String> name = new ArrayList<>();
+		name.add("Rousnan");
+		name.add("Aman");
+		name.add("Ankit");
+		name.add("shyam");
+		
+		name.add("mohan");
+		name.add("shivam");
+		
+		
+		
+		long n = name.stream().filter(s->s.startsWith("A")).count();
+		System.out.println(n);
+		
+		long n1 = Stream.of("Roushan","Aman","Ankit","Shyam","Mohit").filter(s->{
+			s.startsWith("A");
+			return false;
+		}).count();
+		System.out.println(n1);
+		
+		//Print all the names in arraylist
+//		name.stream().forEach(s->System.out.println(s));
+//		name.stream().filter(s->s.length()>5).forEach(s->System.out.println(s));
+		name.stream().filter(s->s.length()>5).limit(1).forEach(s-> System.out.println(s));
+	}
+	
+	@Test
+	public void streamMap(){
+		//print name which has last letter as a with uppercase
+		Stream.of("Roushana","Aman","Ankita","Shyama","Mohit").filter(s->s.endsWith("a")).map(s->s.toUpperCase())
+		.forEach(s->System.out.println(s));	
+		
+		//print names which has first letter as a with upper case and sorted
+		Stream.of("Roushan","Aman","Ankita","Shyam","Mohit").filter(s->s.startsWith("a")).sorted().forEach(s->System.out.println("sorted"+s));;
+				
+				
+		}
+}
+
+
+
+
+
+
+
+
+

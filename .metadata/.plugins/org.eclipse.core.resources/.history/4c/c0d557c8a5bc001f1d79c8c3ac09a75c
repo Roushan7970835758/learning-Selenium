@@ -1,0 +1,10 @@
+package selenium4.oLatestFeature;
+
+public class relativeLocator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,28 @@
+package test1;
+
+import org.testng.annotations.Test;
+
+public class test4 {
+	@Test
+	public void webLoginHomeLoan() {
+		System.out.println("webLoginCarLoan");
+	}
+	
+	@Test
+	public void mobileLoginHomeLoan() {
+		System.out.println("mobileLoginCarLoan");
+	}
+	@Test
+	public void mobileSignInHomeLoan() {
+		System.out.println("mobile Sign In CarLoan");
+	}
+	@Test
+	public void mobileSignOutHomeLoan() {
+		System.out.println("mobile Sign Out CarLoan");
+	}
+	
+	@Test
+	public void loginAPIHomeLoan() {
+		System.out.println("loginAPICarLoan");
+	}
+}
