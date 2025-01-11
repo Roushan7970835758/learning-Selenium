@@ -1,0 +1,44 @@
+package Selenium.SeleniumRevision;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Dropdown_Practice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriverManager.chromedriver().setup();
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
+		driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
+		driver.findElement(By.xpath("//a[contains(text(),' Delhi (DEL)')]")).click();
+		
+		driver.findElement(By.id("ctl00_mainContent_ddl_destinationStation1_CTXT")).click();		
+		driver.findElement(By.xpath("(//a[contains(text(),' Patna (PAT)')])[2]")).click();
+		
+		WebDriverWait w = new WebDriverWait(driver,Duration.ofSeconds(5));
+		
+		w.until(ExpectedConditions.visibilityOf(driver.findElement(By.className("ui-state-default ui-state-active"))));
+		
+		driver.findElement(By.className("ui-state-default ui-state-active")).click();
+		
+		driver.findElement(By.id("divpaxinfo")).click();
+		
+		
+		
+
+	}
+
+}
