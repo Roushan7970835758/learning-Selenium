@@ -30,10 +30,17 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="Selenium.SeleniumRevision"/>
+			<item value="Selenium.SeleniumPracticeRevision"/>
+			<item value="Selenium.SeleniumPractice"/>
 		</list>
 		<list key="groupId">
+			<item value="Selenium"/>
 		</list>
 		<list key="artifactId">
+			<item value="SeleniumRevision"/>
+			<item value="SeleniumPracticeRevision"/>
+			<item value="SeleniumPractice"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -49,12 +56,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="SeleniumFrameworkDesign"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="ExtendReport"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -86,5 +91,18 @@
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="QAselenium"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="QAselenium"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
 	</section>
 </section>

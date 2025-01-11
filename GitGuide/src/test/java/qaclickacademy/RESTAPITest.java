@@ -7,19 +7,20 @@ public class RESTAPITest {
 	@Test
 	public void postJira()
 	{
-		System.out.println("postJira");
-		System.out.println("postJira2");
-		System.out.println("postJira3");
+		System.out.println("postJira_test1");
+		System.out.println("postJira2_test1");
+		System.out.println("postJira3_test1");
 		//feere
 		//ffgf
 		//fgf
-		System.out.println("postJira4");
-		System.out.println("postJira5");
-		System.out.println("postJira6");
-		System.out.println("postJira7");
+		System.out.println("postJira4_test1");
+		System.out.println("postJira5_test1");
+		System.out.println("postJira6_test1");
+		System.out.println("postJira7_test1");
+		System.out.println("this is commit from me roushan");
 		
 		
-		
+		System.out.println("this is code done from develop branch");
 		
 		
 		
