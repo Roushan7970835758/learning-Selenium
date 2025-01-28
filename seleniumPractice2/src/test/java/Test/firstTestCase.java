@@ -1,13 +1,15 @@
 package Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class firstTestCase {
     public static void main(String[] args) throws InterruptedException {
         // Explicitly set the driver version
-        WebDriverManager.chromedriver().driverVersion("131.0.6778.85").setup();
+        WebDriverManager.chromedriver().setup();
 
         // Lonch chrome browser
 //        ChromeDriver driver = new ChromeDriver();    
@@ -26,6 +28,8 @@ public class firstTestCase {
         	System.out.println("Title does not Matched");
         	System.out.println(str);
         }
+        
+        driver.findElement(By.xpath("//strong[contains(text(),' KOLKATA RAJDHNI (12306)')]//ancestor::div[@class='form-group no-pad col-xs-12 bull-back border-all']")).click();
         
         //close Browser
         driver.close();

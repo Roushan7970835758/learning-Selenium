@@ -16,7 +16,7 @@ public class test3 {
 //	@Parameters({"URL"});
 	public void webLoginCarLoan() {
 		System.out.println("webLoginCarLoan");
-		System.out.println(urlName);
+//		System.out.println(urlName);
 		
 		// selenium--> driver.get(urlName)
 	}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-25T02:04:47 IST" name="Default suite" finished-at="2025-01-25T02:04:59 IST" duration-ms="12055">
+    <groups>
+    </groups>
+    <test started-at="2025-01-25T02:04:47 IST" name="Default test" finished-at="2025-01-25T02:04:59 IST" duration-ms="12055">
+      <class name="selenium.firstPractice">
+        <test-method signature="lounchChrome()[pri:0, instance:selenium.firstPractice@639c2c1d]" started-at="2025-01-25T02:04:47 IST" name="lounchChrome" finished-at="2025-01-25T02:04:59 IST" duration-ms="12015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lounchChrome -->
+      </class> <!-- selenium.firstPractice -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-26T01:05:54 IST" name="Suite" finished-at="2025-01-26T01:06:03 IST" duration-ms="9152">
+    <groups>
+      <group name="applyUpdate">
+        <method signature="UpdateResume.UpdateResume()[pri:0, instance:HomePage.UpdateResume@206a70ef]" name="UpdateResume" class="HomePage.UpdateResume"/>
+      </group> <!-- applyUpdate -->
+    </groups>
+    <test started-at="2025-01-26T01:05:54 IST" name="Test" finished-at="2025-01-26T01:06:03 IST" duration-ms="9152">
+      <class name="HomePage.UpdateResume">
+        <test-method is-config="true" signature="Login()[pri:0, instance:HomePage.UpdateResume@206a70ef]" started-at="2025-01-26T01:05:54 IST" name="Login" finished-at="2025-01-26T01:06:00 IST" duration-ms="6502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="UpdateResume()[pri:0, instance:HomePage.UpdateResume@206a70ef]" started-at="2025-01-26T01:06:00 IST" name="UpdateResume" finished-at="2025-01-26T01:06:03 IST" duration-ms="2597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateResume -->
+        <test-method is-config="true" signature="exitBrowser()[pri:0, instance:HomePage.UpdateResume@206a70ef]" started-at="2025-01-26T01:06:03 IST" name="exitBrowser" finished-at="2025-01-26T01:06:03 IST" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exitBrowser -->
+      </class> <!-- HomePage.UpdateResume -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
