@@ -29,7 +29,7 @@ public class test1 {
 	@BeforeSuite
 	public void temp3() {
 		System.out.print("Before suite run");
-	}
+	} 
 	@Test
 	public void temp4() {
 		WebDriverManager.chromedriver().setup();

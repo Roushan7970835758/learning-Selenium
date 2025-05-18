@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [LambdaTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Edge macOS Ventura(failed)">
+    <parameter name="browser" value="MicrosoftEdge"/>
+    <parameter name="version" value="latest"/>
+    <parameter name="platform" value="macOS Ventura"/>
+    <classes>
+      <class name="Practice.LambdaTestAutomation">
+        <methods>
+          <include name="testLambdaTestScenario"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Practice.LambdaTestAutomation -->
+    </classes>
+  </test> <!-- Edge macOS Ventura(failed) -->
+  <test thread-count="2" parallel="tests" name="Chrome Windows 10(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="latest"/>
+    <parameter name="platform" value="Windows 10"/>
+    <classes>
+      <class name="Practice.LambdaTestAutomation">
+        <methods>
+          <include name="testLambdaTestScenario"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Practice.LambdaTestAutomation -->
+    </classes>
+  </test> <!-- Chrome Windows 10(failed) -->
+</suite> <!-- Failed suite [LambdaTestSuite] -->

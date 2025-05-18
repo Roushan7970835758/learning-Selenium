@@ -98,7 +98,7 @@ public class firstPractice {
 		Thread.sleep(2000);
 		a.scrollByAmount(0, 400);
 		
-		HttpURLConnection  connection = new URL()
+	
 		
 		
 		

@@ -1,1 +1,8 @@
-C:\Users\User\eclipse-workspace\TODO\SeleniumFrameworkDesign\src\main\java\Selenium\SeleniumFrameworkDesign\standAlone.java
+C:\Users\User\eclipse-workspace\TODO\SeleniumFrameworkDesign\src\main\java\Selenium\AbstractComponenets\AbstractComponents.java
+C:\Users\User\eclipse-workspace\TODO\SeleniumFrameworkDesign\src\main\java\Selenium\pageObjects\cartPage.java
+C:\Users\User\eclipse-workspace\TODO\SeleniumFrameworkDesign\src\main\java\Selenium\pageObjects\checkoutPage.java
+C:\Users\User\eclipse-workspace\TODO\SeleniumFrameworkDesign\src\main\java\Selenium\pageObjects\conformationPage.java
+C:\Users\User\eclipse-workspace\TODO\SeleniumFrameworkDesign\src\main\java\Selenium\pageObjects\LandingPage.java
+C:\Users\User\eclipse-workspace\TODO\SeleniumFrameworkDesign\src\main\java\Selenium\pageObjects\ordersPage.java
+C:\Users\User\eclipse-workspace\TODO\SeleniumFrameworkDesign\src\main\java\Selenium\pageObjects\productCatalog.java
+C:\Users\User\eclipse-workspace\TODO\SeleniumFrameworkDesign\src\main\java\Selenium\resources\extentReporterNg.java

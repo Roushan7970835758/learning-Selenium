@@ -17,6 +17,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BeforeLogin {
 	public static WebDriver driver;
 	String email = "rroushan40@gmail.com";
+	String Password = "Roushan@123";
 	
 	@BeforeMethod(alwaysRun = true)
 	public void Login() {
@@ -29,7 +30,7 @@ public class BeforeLogin {
 		driver.findElement(By.id("login_Layer")).click();
 		
 		driver.findElement(By.id("usernameField")).sendKeys(email);
-		driver.findElement(By.id("passwordField")).sendKeys("Roushan@123");
+		driver.findElement(By.id("passwordField")).sendKeys(Password);
 		
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		
