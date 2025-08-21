@@ -22,12 +22,12 @@ public class EcomerceAPITest {
 				.setContentType(ContentType.JSON).build();
 		
 		loginRequest loginReq = new loginRequest();
-		loginReq.setUserEmail("roushan@gmail.com");
+		loginReq.setUserEmail("roushankumar22145@gmail.com");
 		loginReq.setUserPassword("Roushan@123");
 		
 		RequestSpecification reqLogin = given().spec(req).body(loginReq);
 		
-		 loginReasponse resLogin = reqLogin.post("/api/ecom/auth/login").then().log().all().extract().response().as(loginReasponse.class);
+		 loginReasponse resLogin = reqLogin.post("/api/ecom/auth/login").then().extract().response().as(loginReasponse.class);
 		 
 		 System.out.println("Token: "+ resLogin.getToken());
 		 System.out.println("UserId: "+ resLogin.getUserId());
@@ -39,14 +39,14 @@ public class EcomerceAPITest {
 				 .build();
 		 
 		 RequestSpecification reqAddProd = given().spec(reqToAddProd)
-		 .param("productName","Labrador")
+		 .param("productName","Test_01")
 		 .param("productAddedBy", resLogin.getUserId())
-		 .param("productCategory", "Animal")
-		 .param("productSubCategory", "Dog")
-		 .param("productPrice", "200")
-		 .param("productDescription", "This is double coated lebrador")
-		 .param("productFor","PetLovers")
-		 .multiPart("productImage", new File("C://Users//User//Downloads//Labrador.jpg"));
+		 .param("productCategory", "Men")
+		 .param("productSubCategory", "SuperMan")
+		 .param("productPrice", "200000000")
+		 .param("productDescription", "This is the strongest men")
+		 .param("productFor","Gods")
+		 .multiPart("productImage", new File("C://Users//User//Downloads//Photo_passport-Photoroom.png"));
 		 
 		 String addProdResp = reqAddProd.post("/api/ecom/product/add-product").then().log().all().extract().response().asString();
 		 JsonPath js = new JsonPath(addProdResp);
